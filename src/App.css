@@ -1,5 +1,13 @@
+body {
+  background: #b2c2bf;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -24,15 +32,119 @@
   color: white;
 }
 
+.output-box {
+  font-size: 20px;
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 32px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust the color as needed */
+  text-align: center;
+  /* Additional styles */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* ... */
+}
+
+h2 {
+  font-size: 22px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust the color as needed */
+  text-align: center;
+  /* Additional styles */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.response {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-top: 2px;
+  background-color: #f8f8f8;
+  font-display: bold;
+}
+
+.box1 {
+  flex: 1;
+  padding: 15px;
+  margin-right: 15px; /* Add margin-right for spacing */
+  background-color: #c0ded9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.box1:hover {
+  background: linear-gradient(to bottom, #99ccff 0%, #ffffff 100%);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+input[type="text"]:hover {
+  background-color: #c0ded9;
+}
+
+select {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  appearance: none; /* Hide the default arrow on some browsers */
+}
+
+/* Styling the option tags */
+select option {
+  color: #000;
+}
+select :hover {
+  background-color: #c0ded9;
+}
+
+button.white-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.white-button:hover {
+  background-color: #c0ded9;
+}
+/* form {
+  width: 400px;
+  height: 400px; 
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-right: 800px;
+} */
+
+paramlabel {
+  height: 30px;
+  padding: 20px;
+  color: blueviolet;
 }
