@@ -64,11 +64,11 @@ function App() {
         <h3 id="title">- By Gaurav Pore</h3>
         <form onSubmit={handleSubmit}>
           <label for="paramlabel">
-            Age:&nbsp;&nbsp;&nbsp;&nbsp;
+            Family members Age:&nbsp;&nbsp;&nbsp;&nbsp;
             <input
               id="age"
               type="text"
-              placeholder="your age"
+              placeholder="input comma seperated age values"
               value={ageList} // Use ageList state variable instead of age
               onChange={onChangeAge}
               // value={age}
@@ -131,7 +131,7 @@ function App() {
             &nbsp;&nbsp;Submit&nbsp;&nbsp;
           </button>
         </form>
-        <h3 id="responseData">Final Total</h3>
+        <h3 id="responseData">Final Total:</h3>
         <p>{responseData?.response?.final_total || "0"}</p>
       </div>
     </div>
